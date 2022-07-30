@@ -20,12 +20,11 @@ use App\Http\Controllers\FasilitasUmumController;
 Route::get('/', function () {
     return view('hometamu');
 });
+
 Route::get('/kamar', [KamarController::class, 'index']);
 Route::get('/fasilitasumum', [FasilitasUmumController::class, 'index']);
 
 
 Route::post('/pesankamar', [PesanController::class, 'pesan']);
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
