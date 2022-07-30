@@ -21,9 +21,11 @@ Route::get('/', function () {
     return view('hometamu');
 });
 
+Route::get('/hometamu', ['index'])->name('hometamu');
+
 Route::get('/kamar', [KamarController::class, 'index']);
 Route::get('/fasilitasumum', [FasilitasUmumController::class, 'index']);
 
-
+Auth::routes();
 Route::post('/pesankamar', [PesanController::class, 'pesan']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

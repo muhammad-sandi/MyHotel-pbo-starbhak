@@ -26,8 +26,9 @@
               <a class="nav-link fw-semibold" href="/fasilitasumum">Fasilitas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="/home">Sign In</a>
+              <a class="nav-link fw-semibold" href="/home">Login</a>
             </li>
+            
           </ul>
         </div>
       </div>
