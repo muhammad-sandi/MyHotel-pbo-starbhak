@@ -8,28 +8,31 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold fs-2 ms-3" href="#">MyHotel</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">  
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Kamar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Fasilitas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Sign In</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">My<span class="text-primary">Hotel</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="/kamar">Kamar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="/fasilitasumum">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">Sign In</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
   </body>
 </html>
+
+@yield('navbar')

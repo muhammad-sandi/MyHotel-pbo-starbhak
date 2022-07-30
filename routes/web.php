@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PesanController;
+use App\Http\Controllers\KamarController;
+use App\Http\Controllers\FasilitasUmumController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +18,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layout.navbar');
+    return view('hometamu');
 });
+
+Route::get('/kamar', [KamarController::class, 'index']);
+Route::get('/fasilitasumum', [FasilitasUmumController::class, 'index']);
+
+
+Route::post('/pesankamar', [PesanController::class, 'pesan']);
