@@ -11,8 +11,8 @@
         <div class="col-md-6 mt-5">
           <h2 class="fw-bold display-3 text-primary">Fresh, quiet<br>and peaceful</h2>
           <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque <br> doloremque beatae ex accusantium at voluptatum eum, provident consectetur corrupti blanditiis est ipsa fugiat sequi numquam <br> debitis odio molestiae dolorem.</p>
-          <button type="button" class="btn btn-transparent border border-white text-white">
-            <i class="fa-solid fa-arrow-right-to-bracket"></i>Join Now</button>
+          <button type="button" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>Pesan Kamar</button>
         </div>
         <!-- Col Image -->
         <div class="col-md-6 mt-5">
@@ -53,6 +53,27 @@
         </div>
         <button type="submit" class="btn btn-primary mt-3">Submit</button>
       </form>
+  </section>
+
+  <!-- Hero Image -->
+<section id="hero">
+    <div class="container">
+      <div class="row">
+
+        <!-- Col Image -->
+        <div class="col-md-6 mt-5">
+            <img src="https://www.assuredpartners.com/Portals/1/2020_Images/About-Us.jpg" alt="" class="img-fluid rounded-top" width="500px">
+          </div>
+
+        <!-- Col Text -->
+        <div class="col-md-6 mt-5">
+          <h2 class="fw-bold display-5 text-primary">About Us</h2>
+          <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque doloremque beatae ex accusantium at voluptatum eum, provident consectetur corrupti blanditiis est ipsa fugiat sequi numquam debitis odio molestiae dolorem, provident consectetur corrupti blanditiis est ipsa fugiat sequi numquam debitis odio molestiae dolorem, provident consectetur corrupti blandtis naipsa fugiat sequi numquam debitis odio molestiae dolorem.</p>
+          {{-- <button type="button" class="btn btn-transparent border border-white text-white">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>Join Now</button> --}}
+        </div>
+      </div>
+    </div>
   </section>
 
 @endsection

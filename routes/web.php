@@ -26,5 +26,4 @@ Route::get('/fasilitasumum', [FasilitasUmumController::class, 'index']);
 
 
 Route::post('/pesankamar', [PesanController::class, 'pesan']);
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
