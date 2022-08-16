@@ -8,13 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Kamar extends Model
 {
     use HasFactory;
-
-    protected $table = 'kamars';
-
+    
+    /**
+     * fillable
+     *
+     * @var array
+     */
     protected $fillable = [
         'tipe',
-        'jumlah_kamar',
         'harga_kamar',
-        'gambar_kamar'
+        'jumlah_kamar',
+        'gambar_kamar',
     ];
 }
