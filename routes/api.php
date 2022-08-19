@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //Kamars
 Route::apiResource('/kamars', App\Http\Controllers\Api\KamarController::class);
+
+Route::apiResource('/Reservasi', App\Http\Controllers\Api\ReservasiController::class);

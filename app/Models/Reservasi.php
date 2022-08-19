@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reservasi extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'tipe',
+        'harga_kamar',
+        'name',
+        'jumlah_kamar',
+        'checkin',
+        'checkout',
+    ];
 }

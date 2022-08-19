@@ -15,19 +15,13 @@ class CreateReservasisTable extends Migration
     {
         Schema::create('reservasis', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('kamar_id');
-            $table->string('nama_pemesan');
-            $table->string('nama_tamu');
-            $table->string('email');
-            $table->string('no_handphone');
+            $table->string('tipe');
+            $table->string('harga_kamar');
+            $table->string('name');
             $table->string('jumlah_kamar');
-            $table->string('total_harga');
-            $table->string('tanggal_checkin');
-            $table->string('tanggal_checkout');
-            $table->enum('status', ['checkin', 'checkout'])->default('checkin');
+            $table->string('checkin');
+            $table->string('checkout');
             $table->timestamps();
-
-            $table->foreign('kamar_id')->references('id')->on('kamars')->onDelete('cascade');
         });
     }
 
